@@ -4,6 +4,7 @@ let id = id => document.getElementById(id);
 let ws = new WebSocket("ws://" + location.hostname + ":" + location.port + "/gol");
 ws.onmessage = msg => update(msg);
 ws.onclose = () => alert("WebSocket connection closed");
+let restarts = 0;
 
 function update(msg) { // Update chat-panel and list of connected users
     let data = JSON.parse(msg.data);
@@ -14,9 +15,8 @@ function update(msg) { // Update chat-panel and list of connected users
 
 
     if (data.restart) {
-        const restarts = id("restarts");
-        const numberOfRestarts = parseInt(restarts.innerText) ?? 0;
-        restarts.innerText = 'Number of restarts:' + numberOfRestarts + 1;
+        restarts += 1;
+        id("restarts").innerText = `Number of restarts: ${restarts}`;
     }
 
     if (data.board) {

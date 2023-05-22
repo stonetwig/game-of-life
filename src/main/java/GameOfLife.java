@@ -36,7 +36,7 @@ public class GameOfLife {
         gameServer.start();
     }
 
-    // Sends a message from one user to all users, along with a list of current usernames
+    // Broadcasts the number of watchers
     private static void broadcastMessage(String message) {
         users.keySet().stream().filter(ctx -> ctx.session.isOpen()).forEach(session -> {
             session.send(Map.of(
@@ -63,7 +63,7 @@ public class GameOfLife {
         });
     }
 
-    // Builds a HTML element with a sender-name, a message, and a timestamp
+    // Builds a HTML element with the number of watchers
     private static String createHtmlMessageFromSender(String message) {
         return article(
                 b(message + ", last updated: "),

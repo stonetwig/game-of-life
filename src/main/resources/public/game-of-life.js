@@ -8,7 +8,6 @@ let restarts = 0;
 
 function update(msg) { // Update chat-panel and list of connected users
     let data = JSON.parse(msg.data);
-    console.log('watchers', data);
     if (data.watcherMessage !== undefined) {
         id("watchers").innerHTML = data.watcherMessage;
     }
@@ -20,7 +19,7 @@ function update(msg) { // Update chat-panel and list of connected users
     }
 
     if (data.board) {
-        drawBoard(data.board, 50);
+        drawBoard(data.board, 25);
     }
 }
 
@@ -44,4 +43,4 @@ function drawBoard(board, squareSize) {
     }
 }
 
-drawBoard([], 50);
+drawBoard([], 25);

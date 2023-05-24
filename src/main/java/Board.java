@@ -2,9 +2,9 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Board {
-    private int[][] previousGen = new int[10][10];
-    private int[][] currentGen = new int[10][10];
-    private final int[][] nextGen = new int[10][10];
+    private int[][] previousGen = new int[30][30];
+    private int[][] currentGen = new int[30][30];
+    private final int[][] nextGen = new int[30][30];
     private int generation = 0;
 
 
@@ -20,7 +20,7 @@ public class Board {
         for (int i = 0; i < currentGen.length; i++) {
             for (int j = 0; j < currentGen[i].length; j++) {
                 int n = rand.nextInt(10);
-                if (n > 7) {
+                if (n > 8) {
                     currentGen[i][j] = 1;
                 } else {
                     currentGen[i][j] = 0;

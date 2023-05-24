@@ -46,7 +46,6 @@ public class GameOfLife {
     }
 
     public static void updateBoard(int[][] generation, boolean restart) {
-        System.out.println("Updating board...");
         users.keySet().stream().filter(ctx -> ctx.session.isOpen()).forEach(session -> {
             session.send(Map.of(
                 "board", generation,
@@ -64,10 +63,8 @@ public class GameOfLife {
     }
 
     // Builds a HTML element with the number of watchers
-    private static String createHtmlMessageFromSender(String message) {
-        return article(
-                b(message + ", last updated: "),
-                span(
+    protected static String createHtmlMessageFromSender(String message) {
+        return p(strong(message + ", last updated: "), span(
                     attrs(".timestamp"), new SimpleDateFormat("HH:mm:ss").format(new Date())
                 )
         ).render();

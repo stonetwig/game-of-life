@@ -1,5 +1,15 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.github.johnrengelman:shadow:8.1.1'
+    }
+}
+
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 group 'org.gol'
@@ -9,16 +19,17 @@ sourceCompatibility = 11
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation("org.slf4j:slf4j-simple:2.0.7")
+    implementation "org.slf4j:slf4j-simple:2.0.7"
     implementation 'io.javalin:javalin-bundle:5.5.0'
     implementation 'com.j2html:j2html:1.6.0'
     implementation 'org.mockito:mockito-core:4.6.1'
-    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation "com.squareup.okhttp3:okhttp:4.10.0"
 }
 
 test {

@@ -2,10 +2,16 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Board {
-    private int[][] previousGen = new int[30][30];
-    private int[][] currentGen = new int[30][30];
-    private final int[][] nextGen = new int[30][30];
+    private int[][] previousGen;
+    private int[][] currentGen;
+    private final int[][] nextGen;
     private int generation = 0;
+
+    public Board(int size) {
+        this.previousGen = new int[size][size];
+        this.currentGen = new int[size][size];
+        this.nextGen = new int[size][size];
+    }
 
 
     public void initGenerations() {

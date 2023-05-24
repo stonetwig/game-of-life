@@ -1,6 +1,6 @@
 public class GameServer extends Thread implements Runnable {
     private boolean running = true;
-    private static final Board board = new Board();
+    private static final Board board = new Board(30);
     private int genEquals = 0;
     private int tick = 0;
     public void run() {

@@ -7,7 +7,7 @@ class BoardTest {
 
     @BeforeEach
     void setUp() {
-        board = new Board();
+        board = new Board(10);
         board.setCurrentGen(
                 new int[][] {
                         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},

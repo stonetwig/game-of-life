@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static j2html.TagCreator.*;
-
 public class GameOfLife {
 
     private static final Map<WsContext, String> users = new ConcurrentHashMap<>();

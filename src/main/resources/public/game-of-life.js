@@ -1,7 +1,8 @@
 let id = id => document.getElementById(id);
 
 //Establish the WebSocket connection and set up event handlers
-let ws = new WebSocket("ws://" + location.hostname + ":" + location.port + "/gol");
+const protocol = location.protocol === "https:"? "wss://" : "ws://";
+let ws = new WebSocket(protocol + location.hostname + ":" + location.port + "/gol");
 ws.onmessage = msg => update(msg);
 ws.onclose = () => alert("WebSocket connection closed");
 let restarts = 0;

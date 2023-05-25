@@ -15,6 +15,14 @@ plugins {
 group 'org.gol'
 version '1.0-SNAPSHOT'
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'GameOfLife'
+        )
+    }
+}
+
 sourceCompatibility = 11
 
 repositories {

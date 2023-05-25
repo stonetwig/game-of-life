@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9638567e-7407-49c4-a6c1-d4a15829d0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameOfLife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/game-of-life.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/game-of-life.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,10 +226,10 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.game-of-life [assemble]" />
-      <item itemvalue="Gradle.game-of-life [run]" />
       <item itemvalue="Gradle.game-of-life [build] (1)" />
       <item itemvalue="Gradle.game-of-life [clean]" />
       <item itemvalue="Gradle.game-of-life [init]" />
+      <item itemvalue="Gradle.game-of-life [run]" />
     </list>
     <recent_temporary>
       <list>
@@ -256,7 +257,9 @@
       <workItem from="1684740928929" duration="624000" />
       <workItem from="1684854620997" duration="1124000" />
       <workItem from="1684919358441" duration="6027000" />
-      <workItem from="1684931904632" duration="1621000" />
+      <workItem from="1684931904632" duration="1800000" />
+      <workItem from="1685008322274" duration="2000" />
+      <workItem from="1685048260606" duration="3218000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,6 @@ public class GameServer extends Thread implements Runnable {
     private int tick = 0;
     public void run() {
         board.initGenerations();
-        board.logGeneration();
         while (running) {
             var restartGame = false;
             try {

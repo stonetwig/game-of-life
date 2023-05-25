@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9638567e-7407-49c4-a6c1-d4a15829d0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameOfLife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/game-of-life.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/game-of-life.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +255,7 @@
       <workItem from="1684919358441" duration="6027000" />
       <workItem from="1684931904632" duration="1800000" />
       <workItem from="1685008322274" duration="2000" />
-      <workItem from="1685048260606" duration="3218000" />
+      <workItem from="1685048260606" duration="3949000" />
     </task>
     <servers />
   </component>

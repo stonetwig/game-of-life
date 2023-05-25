@@ -20,7 +20,7 @@ public class GameServer extends Thread implements Runnable {
                     }
                 }
 
-                if (tick > 300) {
+                if (tick > 100) {
                     // Most likely stuck in a loop, restart the game
                     tick = 0;
                     board.initGenerations();
